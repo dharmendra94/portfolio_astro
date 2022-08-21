@@ -258,6 +258,9 @@ img {
 .about__container {
   row-gap: 2rem;
   text-align: center;
+  margin-left: auto;
+  width: 50%;
+  margin-right: 0;
 }
 
 .about__subtitle {
@@ -547,7 +550,7 @@ h1 {
 main {
     margin: auto;
     padding: 1em;
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 .text-gradient {
