@@ -332,6 +332,10 @@ img {
   width: 80%;
 }
 
+.skills__react {
+    width: 50%;
+}
+
 .skills__img {
   border-radius: .5rem;
 }
@@ -540,11 +544,11 @@ h1 {
     margin: 2rem 0;
 }
 
-// main {
-//     margin: auto;
-//     padding: 1em;
-//     max-width: 60ch;
-// }
+main {
+    margin: auto;
+    padding: 1em;
+    max-width: 1000px;
+}
 
 .text-gradient {
     font-weight: 900;
