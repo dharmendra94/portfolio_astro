@@ -1,5 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import "../../public/assets/scss/styles.scss";
+import "../../public/assets/css/styles.css";
 ---
 
 <Layout title="Welcome to Dharma's page">
@@ -24,6 +27,9 @@ import Layout from "../layouts/Layout.astro";
                     <li class="nav__item">
                         <a href="#work" class="nav__link">Work</a>
                     </li>
+                    <li class="nav__item">
+                        <a href="#articles" class="nav__link">Articles</a>
+                    </li>
                 </ul>
             </div>
 
@@ -45,10 +51,14 @@ import Layout from "../layouts/Layout.astro";
             </div>
 
             <div class="home__social">
-                <a href="https://www.linkedin.com/in/sai-dharmendra-kanneganti-00229811b/" class="home__social-icon"
+                <a
+                    href="https://www.linkedin.com/in/sai-dharmendra-kanneganti-00229811b/"
+                    class="home__social-icon"
                     ><i class="bx bxl-linkedin"></i>
                 </a>
-                <a href="https://github.com/dharmendra94" class="home__social-icon"
+                <a
+                    href="https://github.com/dharmendra94"
+                    class="home__social-icon"
                     ><i class="bx bxl-github"></i>
                 </a>
             </div>
@@ -86,16 +96,19 @@ import Layout from "../layouts/Layout.astro";
 
             <div class="about__container bd-grid">
                 <div class="about__img">
-                    <img src="assets/img/about.jpg" alt="" />
+                    <!-- <img src="assets/img/about.jpg" alt="" /> -->
                 </div>
 
                 <div>
                     <h2 class="about__subtitle">I'am Dharma</h2>
                     <p class="about__text">
-                        Born in India, raised in Hyderabad. I am an engineer by heart
-                        and would love tinkering around stuff which led me to take Computer Science
-                        in my Master's degree. I am passionate about how computers work and love
-                        programming.
+                        Born in India, raised in Hyderabad. Since my childhood I
+                        would love tinkering software and electronics which led
+                        me to take Computer Science in my Master's degree. I
+                        started my programming journey by learning C++ for
+                        computer vision research work during my masters and then
+                        switched my interests to web application development when
+                        I first built my website in Oct 2016.
                     </p>
                 </div>
             </div>
@@ -109,8 +122,9 @@ import Layout from "../layouts/Layout.astro";
                 <div>
                     <h2 class="skills__subtitle">Profesional Skills</h2>
                     <p class="skills__text">
-                        My first website was built using ASP.Net Web MVC while pursuing my Master's degree 
-                        which gave my strength and confidence to find an internship where I built multiple
+                        My first website was built using ASP.Net Web MVC while
+                        pursuing my Master's degree which gave my strength and
+                        confidence to find an internship where I built multiple
                         web applications using ASP.Net MVC and SQL server.
                     </p>
                     <div class="skills__data">
@@ -156,26 +170,119 @@ import Layout from "../layouts/Layout.astro";
         <section class="work section" id="work">
             <h2 class="section-title">Work</h2>
 
-            <div class="work__container bd-grid">
-                <a href="" class="work__img">
-                    <img src="assets/img/work1.jpg" alt="" />
-                </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/work2.jpg" alt="" />
-                </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/work3.jpg" alt="" />
-                </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/work4.jpg" alt="" />
-                </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/work5.jpg" alt="" />
-                </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/work6.jpg" alt="" />
-                </a>
-            </div>
+            <section class="timeline">
+                <div class="container">
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+
+                        <div class="timeline-content js--fadeInLeft">
+                            <h2>OliveAI</h2>
+                            <div class="date">Oct 2021 - Present</div>
+                            <div class="work-experience-content">
+                                <ul class="work-experience-list">
+                                    <li>
+                                        Led a project architecture change using
+                                        design patterns that made the product
+                                        scalable and reduced the engineering
+                                        build time from 3 months to 1 month.
+                                    </li>
+                                    <li>
+                                        Built good dynamics in a team of six
+                                        talented engineers where trust is
+                                        established and increased our
+                                        productivity by 10%.
+                                    </li>
+                                    <li>
+                                        <b>Tech stack:</b> Reactjs, NextJs, MongoDB,
+                                        MySQL, AWS
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+
+                        <div
+                            class="timeline-content timeline-card js--fadeInRight"
+                        >
+                            <h2>Neem Analytics</h2>
+                            <div class="date">Oct 2017 - Oct 2021</div>
+                            <ul class="work-experience-list">
+                                <li>
+                                    Developed a robust purchasing model in .Net
+                                    which Increased over 10% of profits for our
+                                    pharmacy clients.
+                                </li>
+                                <li>
+                                    Build multiple applications as SaaS for
+                                    independent pharmacies to optimize their
+                                    purchasing, inventory, delivery etc
+                                </li>
+                                <li>
+                                    <b>Tech stack:</b> C#, .Net core, Angular, MS
+                                    SQL server, swift.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+
+                        <div
+                            class="timeline-content timeline-card js--fadeInLeft"
+                        >
+                            <h2>Miami Luken</h2>
+                            <div class="date">Dec 2016 - Oct 2017</div>
+                            <ul class="work-experience-list">
+                                <li>
+                                    Developed an internal web application using
+                                    ASP.Net MVC that made our organization’s
+                                    employee performance evaluation process
+                                    seamless and more efficient by reducing
+                                    paper to 95%.
+                                </li>
+                                <li>
+                                    Developed an analytical tool for the
+                                    independent pharmacies using ASP.Net MVC,
+                                    which improved their efficiency in multiple
+                                    ways like inventory management, Drug
+                                    transfers, Prescriptions Management, and
+                                    Customer Service.
+                                </li>
+                                <li>
+                                    <b>Tech stack:</b> ASP .Net MVC, JQuery, Javascript,
+                                    MS SQL Server, ASP.Net Web API, Angular.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!--====== Articles ====-->
+        <section class="articles section" id="articles">
+            <h2 class="section-title">Articles</h2>
+            <ul role="list" class="link-card-grid">
+                <Card
+                    href="https://medium.com/swlh/how-i-practice-angular-ngrx-by-building-tesla-custom-order-process-clone-99780d06bf8b"
+                    title="One of the Best Possible Ways to Learn Angular NgRx"
+                    body="I’ll start by sharing how did I end up writing an article explaining Angular NgRx. For the past two weeks, I was contemplating on choosing an idea to build an Angular application to demonstrate Angular NgRx in the best possible way...."
+                />
+                <Card
+                    href="https://medium.com/swlh/how-i-created-a-recipe-app-using-angular-firebase-and-rapidapi-6e87f28f338d"
+                    title="How I Created a Recipe App Using Angular, Firebase and RapidAPI"
+                    body="Today, I will share my journey of building and hosting a Recipe app using Angular, Firebase (for hosting the angular app), and a public API called Recipe-Food-Nutrition by spoonacular hosted at RapidAPI..."
+                />
+                <Card
+                    href="https://sai-dharmendra-kanneganti.medium.com/how-to-setup-angular-material-firebase-698d6a9844a2"
+                    title="How to setup Angular, Material & Firebase"
+                    body="This article will walk you through the steps of setting up an angular application, adding material library for UI components and firebase to host the application..."
+                />
+            </ul>
         </section>
     </main>
 
@@ -189,7 +296,9 @@ import Layout from "../layouts/Layout.astro";
             </a>
             <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
         </div>
-        <p class="footer__copy">&#169; Dharma kanneganti. All rights reserved</p>
+        <p class="footer__copy">
+            &#169; Dharma kanneganti. All rights reserved
+        </p>
     </footer>
 
     <!--===== SCROLL REVEAL =====-->
@@ -200,5 +309,5 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
-    
+
 </style>
